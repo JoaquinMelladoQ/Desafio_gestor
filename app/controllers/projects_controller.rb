@@ -8,6 +8,10 @@ class ProjectsController < ApplicationController
     @project = Project.create(project_params)
   end
 
+  def dashboard
+    @projects = Project.all
+  end
+
   private
 
   def project_params
