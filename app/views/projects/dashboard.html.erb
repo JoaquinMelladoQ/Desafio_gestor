@@ -1,0 +1,19 @@
+<ul>
+    <% @projects.each do |p| %>
+        <li>
+            <%= p.name %>
+        </li>
+        <li>
+            <%= p.description %>
+        </li>
+        <li>
+            <%= p.start_on %>
+        </li>
+        <li>
+            <%= p.end_on %>
+        </li>
+        <li>
+            <%= p.state %>
+        </li>
+    <% end %>
+</ul>
