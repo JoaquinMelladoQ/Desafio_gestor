@@ -1,2 +1,8 @@
-<h1>Projects#index</h1>
-<p>Find me in app/views/projects/index.html.erb</p>
+<%= form_with(model: @project, url: project/create, local:true) do |f| %>
+    <%= f.text_field :name %>
+    <%= f.text_area :description %>
+    <%= f.date_select :start_on %>
+    <%= f.date_select :end_on %>
+    <%= f.select :state, @states, {include_blank: true} %>
+    <%= f.submit %>
+<% end %>
