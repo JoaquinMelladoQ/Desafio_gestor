@@ -1,4 +1,4 @@
-<%= form_with(model: @project, url: project/create, local:true) do |f| %>
+<%= form_with(model: @project, url: projects_create_path, local:true) do |f| %>
     <%= f.text_field :name %>
     <%= f.text_area :description %>
     <%= f.date_select :start_on %>
