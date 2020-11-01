@@ -5,7 +5,7 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    @project = Project.create(project_params)
+    @project = Project.create!(project_params)
   end
 
   def dashboard
