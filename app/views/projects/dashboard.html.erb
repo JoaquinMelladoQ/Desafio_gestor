@@ -1,10 +1,12 @@
-<select name="state">
-    <option value= ""></option>
-    <option value= 0>Propuesta</option>
-    <option value= 1>En progreso</option>
-    <option value= 2>Terminado</option>
-</select>
-<button type="submit">Buscar</button>
+<form>
+    <select name="state">
+        <option value= ""></option>
+        <option value= 0>Propuesta</option>
+        <option value= 1>En progreso</option>
+        <option value= 2>Terminado</option>
+    </select>
+    <button type="submit">Buscar</button>
+</form>
 
 <ul>
     <% @projects.each do |p| %>

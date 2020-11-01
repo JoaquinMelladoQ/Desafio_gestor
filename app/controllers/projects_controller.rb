@@ -9,7 +9,11 @@ class ProjectsController < ApplicationController
   end
 
   def dashboard
-    @projects = Project.all
+    if params[:state].present?
+      @projects = Project.where('state = ?', params[:state])
+    else
+      @projects = Project.all
+    end
   end
 
   private
